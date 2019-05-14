@@ -15,8 +15,8 @@ Step 2:<br>
 Choose correct board model and port.
 
 Step 3:<br>
-Before you upload your code, you need to click the reset button of pro mini and upload your code.<br>
-When the status bar display the **Uploading...**, and release the reset button, and you can see the **Done uploading.**
+Before you upload your code, you need to click the **Reset** button of pro mini and upload your code.<br>
+When the status bar display the **Uploading...**, and release the **Reset** button, and you can see the **Done uploading.**
 
 ---
 
