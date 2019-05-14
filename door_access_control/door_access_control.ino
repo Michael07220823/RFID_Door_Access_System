@@ -147,9 +147,9 @@ void loop() {
   
 //  Serial.println(match_rfid_card);
   // Determine if it is a legal card
-  for(int i=0; i<sizeof(legal_rfid_card); i++){
+  for(int i=0; i<sizeof(legal_rfid_card_uid); i++){
     // YES
-    if(match_rfid_card == legal_rfid_card[i]){
+    if(match_rfid_card == legal_rfid_card_uid[i]){
     //  LED
     analogWrite(redpin, 0);
     analogWrite(bluepin, 0);
