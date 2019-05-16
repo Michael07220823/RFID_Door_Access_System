@@ -1,12 +1,28 @@
 # RFID_Door_Access_System
 
+## Material list:
+| Item                                                                                             | Amount  |
+| -------------------------------------------------------------------------------------------------|:-------:|
+| Arduino pro mini ATMEGA328P 5V/16M                                                               | x1      | 
+| Miafare MFRC522 module                                                                           | x1      | 
+| 5V Bz                                                                                            | x1      |
+| One way relay module                                                                             | x1      |
+| [SY-L60S Magnetic lock](https://www.icshop.com.tw/product_info.php/products_id/24044)            | x1      |
+| Electronic transformer 12V-1A                                                                    | x1      |
+| PL2303HXD USB to TTL cable                                                                       | x1      |
+| Breadboard                                                                                       | x1      |
+| 9V Battery                                                                                       | x1      |
+| [9V Battery buckle](https://www.icshop.com.tw/images/product_images/popup_images/9455_0.jpg)     | x1      |
+| Dupont Line                                                                                      | x20     |
+---
+
 ## How can burn code from Arduino IDE to pro mini board ?
-| Pro mini pin  | PL2303HDX cable pin  |
-| --------------|:-------------------:|
-| GND           | black line          | 
-| VCC           | red line            | 
-| RX0           | green line          | 
-| TX0           | white line          | 
+| Pro mini pin  | PL2303HDX cable pin |
+|:-------------:|:-------------------:|
+| GND           | black line          |
+| VCC           | red line            |
+| RX0           | green line          |
+| TX0           | white line          |
 
 Step 1:<br>
 Connect pro mini pin and PL2303HXD line.
@@ -20,20 +36,50 @@ When the status bar display the **Uploading...**, and release the **Reset** butt
 
 ---
 
-## Material list:
-| Item                                                                                             | Amount  |
-| -------------------------------------------------------------------------------------------------|:-------:|
-| Arduino pro mini ATMEGA328P 5V/16M                                                               | x1      | 
-| Miafare MFRC522 module                                                                           | x1      | 
-| Bz 5V                                                                                            | x1      |
-| One way relay module                                                                             | x1      |
-| [SY-L60S Magnetic lock](https://www.icshop.com.tw/product_info.php/products_id/24044)            | x1      |
-| Electronic transformer 12V-1A                                                                    | x1      |
-| PL2303HXD USB to TTL cable                                                                       | x1      |
-| Breadboard                                                                                       | x1      |
-| Dupont Line                                                                                      | x20     |
----
+## Arduino Pro mini pin to module and element
+| Pro mini pin  | MFRC522 module      |
+|:-------------:|:-------------------:|
+| VCC           | 3.3V                |
+| RST           | 9                   |
+| GND           | GND                 |
+| MISO          | 12                  |
+| MOSI          | 11                  |
+| SCK           | 13                  |
+| SDA           | A4                  |
 
+<br>
+
+| Pro mini pin  | RGB LED module      |
+|:-------------:|:-------------------:|
+| GND           | -                   |
+| 6             | G                   |
+| 3             | R                   |
+| 5             | B                   |
+
+<br>
+
+| Pro mini pin  |    Relay module     |
+|:-------------:|:-------------------:|
+| GND           | -                   |
+| VCC           | +                   |
+| 7             | S                   |
+
+<br>
+
+| Pro mini pin  |    Bz               |
+|:-------------:|:-------------------:|
+| GND           | -                   |
+| 10            | +                   |
+
+<br>
+
+| Electronic transformer 12V-1A  | Relay module  |SY-L60S Magnetic lock|
+|:------------------------------:|:-------------:|:-------------------:|
+|                +               |      COM      |                     | 
+|                -               |               |      black line     |
+|                                |      NC       |      red line       | 
+
+---
 ### Reference:
 + [Arduino pro mini pin](https://robu.in/product/arduino-pro-mini-wo-cable/)
 + [Arduino MFRC522 example](https://github.com/miguelbalboa/rfid/tree/master/examples)
