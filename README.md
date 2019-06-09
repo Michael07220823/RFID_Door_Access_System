@@ -1,4 +1,6 @@
 # RFID_Door_Access_System
+![Alt text](entity.jpg)
+※The above appearance is designed by the students of the design department.I am only responsible for the design of internal circuits and programs.<br>
 
 ## Material list:
 | Item                                                                                             | Amount  |
