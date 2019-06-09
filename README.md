@@ -13,8 +13,8 @@
 | Electronic transformer 12V-1A                                                                    | x1      |
 | PL2303HXD USB to TTL cable                                                                       | x1      |
 | Breadboard                                                                                       | x1      |
-| 9V Battery                                                                                       | x1      |
-| [9V Battery buckle](https://www.icshop.com.tw/images/product_images/popup_images/9455_0.jpg)     | x1      |
+| 5V mobile phone charger                                                                          | x1      |
+| Mobile phone charging cable                                                                      | x1      |
 | Dupont Line                                                                                      | x20     |
 ---
 
